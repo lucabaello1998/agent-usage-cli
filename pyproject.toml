@@ -19,6 +19,9 @@ dev = ["pytest>=8", "ruff>=0.5"]
 [project.scripts]
 agent-usage = "agent_usage.cli:main"
 
+[tool.hatch.build.targets.wheel]
+packages = ["agent_usage"]
+
 [tool.ruff]
 line-length = 110
 target-version = "py310"
