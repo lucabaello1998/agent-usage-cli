@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-usage-cli"
+version = "0.1.0"
+description = "Tu uso de agentes de IA en la terminal: sesiones, tokens, costo y ritmo de Claude Code, OpenCode y Codex, en tabla, CSV o HTML. Sin dependencias."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Luca Baello" }]
+keywords = ["claude-code", "opencode", "codex", "tokens", "cost", "cli"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+agent-usage = "agent_usage.cli:main"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
