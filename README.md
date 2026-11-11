@@ -118,3 +118,19 @@ OpenCode y un rollout de Codex, con el formato real de cada uno. El CI los corre
 - No hay latencia por request porque ninguna de las tres la guarda; se muestra duración y ritmo.
 - El costo de Claude es una estimación con una tabla que envejece.
 - Lee lo que hay en disco: si borraste los logs, no hay historia.
+
+## Publicar en PyPI
+
+Todavía no está en PyPI: se instala desde el repo (ver *Instalar*). Para publicarlo:
+
+```bash
+python -m build
+python -m twine upload dist/*
+```
+
+Hace falta una cuenta en PyPI y un token en `~/.pypirc` o en la variable `TWINE_PASSWORD`; no hay
+secretos en el repo. El CI construye el paquete en cada push para que el `pyproject.toml` no se rompa.
+
+## Licencia
+
+MIT. Ver [`LICENSE`](LICENSE).
