@@ -1,5 +1,9 @@
 # agent-usage-cli
 
+<p align="center">
+  <a href="https://github.com/lucabaello1998/agent-usage-cli/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/lucabaello1998/agent-usage-cli?label=release"></a>
+</p>
+
 **Tu uso de agentes de IA en la terminal, en un comando.** Lee los archivos que dejan
 Claude Code, OpenCode y Codex, y devuelve sesiones, tokens, costo y tiempo en una tabla, un
 CSV o un informe HTML autocontenido. Sin dependencias, sin red, sin telemetría.
